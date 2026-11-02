@@ -79,7 +79,7 @@
     var compose = function () {
       var d = new FormData(form);
       var lines = [
-        'Bonjour SNC EROA CHEKAOUI et Cie,',
+        'Bonjour SNC EROA,',
         '',
         'Nom : ' + (d.get('name') || ''),
         'Société : ' + (d.get('company') || '-'),
