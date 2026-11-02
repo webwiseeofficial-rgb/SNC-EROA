@@ -161,7 +161,7 @@ h3 { font-size: 1.3rem; }
 .page-head { position: relative; isolation: isolate; background: var(--ink); color: #fff; padding: 84px 0 72px; overflow: hidden; }
 .page-head::after {
   content: ""; position: absolute; z-index: -1; right: 6%; bottom: -30px; width: 340px; height: 404px;
-  background: url("../img/mark.svg") center / contain no-repeat; opacity: .14;
+  background: url("../img/mark.png") center / contain no-repeat; opacity: .14;
 }
 .page-head p { margin-top: 20px; max-width: 58ch; color: #c9d6e0; font-size: 1.15rem; }
 
@@ -208,7 +208,7 @@ h3 { font-size: 1.3rem; }
 }
 .tile::after {
   content: ""; position: absolute; z-index: -1; top: 18px; right: 18px; width: 84px; height: 100px;
-  background: url("../img/mark.svg") center / contain no-repeat; opacity: .28;
+  background: url("../img/mark.png") center / contain no-repeat; opacity: .28;
 }
 .tile.has-photo::before { background-image: linear-gradient(180deg, rgba(13,34,54,0) 35%, rgba(13,34,54,.92)); background-size: auto; }
 .tile.has-photo::after { display: none; }
@@ -648,7 +648,7 @@ h2 { font-size: clamp(1.8rem, 3.2vw, 2.7rem); }
 .cta2 { padding: 0 0 96px; }
 .cta2 .box { position: relative; overflow: hidden; isolation: isolate; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 28px; padding: 56px 60px; border-radius: 32px; color: #fff;
   background: radial-gradient(500px 300px at 100% 0%, rgba(242,183,5,.4), transparent 65%), linear-gradient(120deg, var(--ink), var(--ink-2)); }
-.cta2 .box::after { content: ""; position: absolute; z-index: -1; right: 24px; bottom: -40px; width: 230px; height: 276px; background: url("../img/mark.svg") center / contain no-repeat; opacity: .1; }
+.cta2 .box::after { content: ""; position: absolute; z-index: -1; right: 24px; bottom: -40px; width: 230px; height: 276px; background: url("../img/mark.png") center / contain no-repeat; opacity: .1; }
 .cta2 p { color: #c9d6e0; margin-top: 8px; font-size: 1.1rem; }
 
 /* Mobile action bar */
@@ -880,7 +880,7 @@ h2 { font-size: clamp(1.8rem, 3.2vw, 2.7rem); }
 .service-body .more::after { content: none; }
 .service-body .more:hover { background: none; color: var(--ink); }
 .service.service-card.cta-card { position: relative; justify-content: center; gap: 14px; padding: 34px 28px; border-color: transparent; color: #fff; background: radial-gradient(400px 260px at 100% 0%, rgba(242,183,5,.4), transparent 65%), linear-gradient(160deg, var(--ink-2), var(--ink)); }
-.service.service-card.cta-card::after { content: ""; position: absolute; right: 18px; bottom: 14px; width: 120px; height: 144px; background: url("../img/mark.svg") center / contain no-repeat; opacity: .1; }
+.service.service-card.cta-card::after { content: ""; position: absolute; right: 18px; bottom: 14px; width: 120px; height: 144px; background: url("../img/mark.png") center / contain no-repeat; opacity: .1; }
 .cta-card h2 { color: #fff; font-size: 1.45rem !important; }
 .cta-card p { color: #c9d6e0; }
 .cta-card .btn { align-self: flex-start; margin-top: 6px; position: relative; z-index: 1; }
@@ -1172,3 +1172,10 @@ h2 { font-size: clamp(1.8rem, 3.2vw, 2.7rem); }
 /* hero legibility */
 .hx2 .hx-bg { -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 42%); mask-image: linear-gradient(90deg, transparent 0, #000 42%); }
 @media (max-width: 980px) { .hx2 .hx-bg { opacity: .22; } }
+
+/* logo + spacing fixes */
+.brand img { height: 46px; width: 46px; border-radius: 0; object-fit: contain; }
+.brand-name { font-size: 1.2rem; }
+.cta2 { padding: 88px 0 96px; }
+.cta2 .box::after { opacity: .07; right: 40%; }
+@media (max-width: 760px) { .brand img { height: 38px; width: 38px; } .cta2 { padding: 48px 0 52px; } }
